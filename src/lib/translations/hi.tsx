@@ -178,6 +178,7 @@ export const hi = {
     community: "समुदाय",
     nutrientRecommendation: "पोषक तत्व सिफारिश",
     pestDiseaseControl: "कीट और रोग नियंत्रण",
+    diseaseDetection: "रोग पहचान",
     weatherForecast: "मौसम पूर्वानुमान",
     feedback: "प्रतिक्रिया",
     farmerAccount: "किसान खाता",

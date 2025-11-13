@@ -178,6 +178,7 @@ export const en = {
     community: "Community",
     nutrientRecommendation: "Nutrient Recommendation",
     pestDiseaseControl: "Pest & Disease Control",
+    diseaseDetection: "Disease Detection",
     weatherForecast: "Weather Forecast",
     feedback: "Feedback",
     farmerAccount: "Farmer Account",

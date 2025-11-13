@@ -178,6 +178,7 @@ export const ta = {
     community: "சமூகம்",
     nutrientRecommendation: "ஊட்டச்சத்து பரிந்துரை",
     pestDiseaseControl: "பூச்சி மற்றும் நோய் கட்டுப்பாடு",
+    diseaseDetection: "நோய் கண்டறிதல்",
     weatherForecast: "வானிலை முன்னறிவிப்பு",
     feedback: "கருத்து",
     farmerAccount: "விவசாயி கணக்கு",

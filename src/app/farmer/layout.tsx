@@ -27,11 +27,12 @@ import {
   Users,
   MessageSquareHeart,
   FlaskConical,
-  Bug,
   CloudSun,
   Award,
   TrendingUp,
-  LineChart
+  LineChart,
+  Microscope,
+  Brain
 } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { FarmDetailsProvider } from '@/context/farm-details-provider';
@@ -44,14 +45,15 @@ export default function FarmerLayout({ children }: { children: React.ReactNode; 
   
   const navLinksData = [
     { href: "/farmer/dashboard", label: t.farmer.dashboard, icon: <LayoutDashboard className="h-4 w-4" /> },
-    { href: "/farmer/pricing", label: t.farmer.aiPricing, icon: <DollarSign className="h-4 w-4" /> },
+    { href: "/farmer/ai-pricing", label: t.farmer.aiPricing, icon: <Brain className="h-4 w-4" /> },
     { href: "/farmer/orders", label: t.farmer.incomingOrders, icon: <ShoppingCart className="h-4 w-4" /> },
     { href: "/farmer/graded-produce", label: t.farmer.myGradedProduce, icon: <Award className="h-4 w-4" /> },
     { href: "/farmer/market-insights", label: t.farmer.marketInsights, icon: <TrendingUp className="h-4 w-4" /> },
     { href: "/farmer/market-demand", label: t.farmer.marketDemand, icon: <LineChart className="h-4 w-4" /> },
     { href: "/farmer/community", label: t.farmer.community, icon: <Users className="h-4 w-4" /> },
     { href: "/farmer/nutrient-recommendation", label: t.farmer.nutrientRecommendation, icon: <FlaskConical className="h-4 w-4" /> },
-    { href: "/farmer/pest-control", label: t.farmer.pestDiseaseControl, icon: <Bug className="h-4 w-4" /> },
+
+    { href: "/farmer/disease-detection", label: t.farmer.diseaseDetection, icon: <Microscope className="h-4 w-4" /> },
     { href: "/farmer/weather-forecast", label: t.farmer.weatherForecast, icon: <CloudSun className="h-4 w-4" /> },
     { href: "/farmer/feedback", label: t.farmer.feedback, icon: <MessageSquareHeart className="h-4 w-4" /> },
   ];

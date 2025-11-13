@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { Mic, MicOff, VolumeX } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useVoiceAssistant } from '@/hooks/use-voice-assistant';
@@ -7,6 +8,7 @@ import { useLanguage } from '@/context/language-provider';
 import { cn } from '@/lib/utils';
 
 export function VoiceButton() {
+  const [mounted, setMounted] = useState(false);
   const { language } = useLanguage();
   const {
     isListening,
@@ -20,6 +22,15 @@ export function VoiceButton() {
     stopSpeaking,
     isSupported
   } = useVoiceAssistant(language);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Don't render anything on server
+  if (!mounted) {
+    return null;
+  }
 
   // Additional browser check
   const browserSupported = typeof window !== 'undefined' && (

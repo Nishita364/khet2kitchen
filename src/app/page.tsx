@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Leaf, ArrowRight } from 'lucide-react';
+import { ArrowRight, Leaf } from 'lucide-react';
 import { useLanguage } from '@/context/language-provider';
 
 export default function LandingPage() {
@@ -13,7 +13,7 @@ export default function LandingPage() {
     <div className="relative flex flex-col min-h-screen bg-background">
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('https://placehold.co/1200x800.png')" }}
+        style={{ backgroundImage: "url('/backgrd.jpg')" }}
         data-ai-hint="lush farm field"
       >
         <div className="absolute inset-0 bg-background/80"></div>

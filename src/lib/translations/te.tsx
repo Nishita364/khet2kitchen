@@ -178,6 +178,7 @@ export const te = {
     community: "కమ్యూనిటీ",
     nutrientRecommendation: "పోషక సిఫార్సు",
     pestDiseaseControl: "పురుగు మరియు వ్యాధి నియంత్రణ",
+    diseaseDetection: "వ్యాధి గుర్తింపు",
     weatherForecast: "వాతావరణ సూచన",
     feedback: "అభిప్రాయం",
     farmerAccount: "రైతు ఖాతా",
